@@ -2,7 +2,7 @@
     <div id="footer">
         <div class="mail"><img src="../image/icone/mensagem.gif" alt="">
              psicologiaacolherse@gmail.com <br>
-             Atendimento via email.
+             Contato via email.
         </div>
 
     </div>
