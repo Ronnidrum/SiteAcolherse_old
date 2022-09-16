@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    }
+
+body{
+   margin:0;
+    position:absolute;
+   font-family:'Oswald', 'sans-serif';
+   background-color: #eee7de;
+   width: 100%;
+   height: 100%;
+}
+
+.section{
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    /*background: LightSteelBlue;*/
+    /*background-image: url("../img/fundo.png");*/
+    background-image: url("../image/fundo menu.png");
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section img {
+    height:100%;
+}
+
+.containers{
+
+    background-image: url("../image/LOGO_SEM_FUNDO_WEEB_2.png");
+    background-repeat: no-repeat;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.containers img{
+
+    height:100%;
+    width: 100%;
+}
+
+.cabecalho{
+    display: inline-block;
+    background-color: #553235;
+    /*background-image: url("assets/img/marrom.webp");*/
+    /*border-bottom: solid 5px #553235;*/
+    height: 50px;
+    width: 100%;
+    box-sizing: content-box;
+    position: sticky;
+    margin:0;
+
+}
+
+.logo{
+
+    display: inline-block;
+    height: 70px;
+    padding: 0px;
+}
+
+.logo img{height:100%;}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    margin: -15px;
+    height: 60px;
+    width: 900px;
+    padding: 25px
+}
+
+.menu ul{
+    margin:0;
+    padding:0;
+}
+
+
+.menu li {
+  display: inline-block;
+  font-size: 1.3em;
+
+}
+
+
+.menu a{
+    text-decoration-line: none;
+    text-decoration: none;
+    color: #a3dfc3;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu a:hover, .menu a.selected{
+    text-decoration: none;
+    background-color:#97abc5;
+    color: #e7dbdc;
+}
+
+.footer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    margin-top: -11px;
+    top: 91%;
+    background-color: #553235;
+    color:#a3dfc3;
+    font-size: 13px;
+}
+#footer{
+    display: inline-block;
+}
+
+.item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+
+  .endereco {
+    width: 500px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 1px;
+  }
+  .endereco img{
+    height:20px;
+    width: 20px;
+  }
+
+  .tel {
+    width: 400px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+  .tel img{
+    height:20px;
+    width: 20px;
+  }
+
+  .mail {
+    width: 400px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top:5px;
+    font-size: 20px;
+  }
+
+  .mail img{
+    height:20px;
+    width: 20px;
+  }
+
+  .item .social > a:hover {
+    opacity:0.9;
+  }
+
+  #social{
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 900px;
+  }
+
+
+
+@media(max-width:810px){
+
+    #btn{
+        display: block;
+    }
+
+    .menu{display:none;}
+    .form{
+        margin-top: 0%;
+    }
+
+
+}
+
+@media(min-width: 809px){
+    .cmenumobile {transform: translateX(525px);
+                display:none;
+    }
+
+    #mobile{
+        display:none;
+    }
+
+}
+
+/*@media(max-width:1366px){
+.container{background-image: url("../image/LOGO SEM FUNDO WEEB 3.png");
+             background-repeat: no-repeat;
+    }
+
+}
+@media(min-width:1370px){
+    .container{background-image: url("../image/LOGO_SEM_FUNDO_WEEB 3.png");
+             background-repeat: no-repeat;
+            }
+
+}*/
+
+
+
+.btn-menu {
+    display: none;
+    float: right;
+    width: 45px;
+    height: 40px;
+    margin: 20px;
+    left: 10px;
+    top: 10px;
+    display:absolute;
+    padding: 10px;
+    background-color: #e2b896;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+  }
+
+  .btn-menu span {
+    height: 3px;
+    display: block;
+    margin-bottom: 5px;
+    background-color: salmon;
+  }
+
+  .menu-mobile {
+    margin-left: -500;
+    display: block;
+    float : right;
+
+    width:270px;
+    height:50%;
+    background-color: rgb(243, 241, 241);
+    position:inherit;
+    overflow: hidden;
+    transition-duration: 0.03s;
+    -webkit-transition-duration: 0.03s;
+    -moz-transition-duration: 0.03s;
+  }
+
+
+  .menu-mobile ul li {
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.1)
+  }
+
+  .menu-mobile ul li a {
+    display: block;
+    padding: 12px;
+    /*text-decoration: none;*/
+    color: #553235;
+  }
+
+  .menu-mobile ul li a:hover {
+    background-color: rgba(182, 140, 140, 0.1);
+  }
+
+  .menu-mobile {
+      transform: translateX(325px);
+    }
+    .btn-menu {
+        transform: translateX(0);
+    }
+
+    .cmenumobile .menu-mobile {
+    transform: translateX(0px);
+    }
+
+    .cmenumobile .btn-menu {
+        transform: translateX(0px);
+        left: 0px;
+    }
+.btn-form{
+
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+}
+
+
+/*Style para contato */
+
+#form_contato{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    position: absolute;
+    overflow: hidden;
+    background-image: url("../image/fundo menu.png");
+}
+/*Style do formulário*/
+.form{
+
+    box-shadow:  0 0 10px #553235;
+    border-radius: 10px;
+    height: 500px;
+    width: 100px;
+
+
+}
+#form{
+    margin-top: -100px;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.cmenumobile{
+    position: relative;
+    margin: -100 0;
+    display:none;
+}
+
+.button{
+    margin-top: 40px;
+    height: 100;
+    border-radius: 10px;
+}
+
+
+.active{
+    display:inline;
+    float: right;
+    transform: translateX(0px);
+}
+
+.nome{
+    margin-top: 10px;
+}
+
+.email{
+    margin-top: 10px;
+}
+
+.text{
+    margin-top: 10px;
+}
+/*end form*/
+.carrossel{
+    margin-left: 900px;
+    margin-top: 150px;
+    height: 200px;
+    width: 400px;
+    font-family: 'Dancing Script', cursive;
+    color:#553235;
+}
+
+.contexto{
+    background-image: url("../image/fundo menu.png");
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+.sobre{
+    height: 100%;
+    width: 100%;
+}
+.texto{
+    width: 900px;
+    border-bottom-right-radius:5px ;
+    border-radius: 5px;
+}
+
+.imagem{
+    float: right;
+}
+
+li {list-style-image: url("../image/borboleta_li.png") ;
+}
