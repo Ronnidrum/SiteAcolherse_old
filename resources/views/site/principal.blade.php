@@ -2,13 +2,16 @@
 
 @section('conteudo')
 
-    <section class = "section">
-        <div class="containers" id="containers">
+
+
+        <div class="containers" >
 
                 @include('site.layout.parciais._carrossel')
 
-            @include('site.layout.parciais._menuMobile')
+                @include('site.layout.parciais._menuMobile')
+
         </div>
-    </section>
-    @include('site.layout.parciais._footer')
+
+
+
 @endsection

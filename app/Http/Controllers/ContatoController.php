@@ -8,7 +8,7 @@ class ContatoController extends Controller
 {
     //
     public function index(){
-        return view('site.contato');
+        return view('site.Contato');
     }
 
     public function envioEmail(Request $request){

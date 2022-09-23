@@ -2,24 +2,29 @@
     box-sizing: border-box;
     }
 
-body{
-   margin:0;
+    @font-face {
+        font-family: Script-Mt-Bold;
+        src: url(../font/script-mt-bold.ttf)
+      }
+
+html, body{
+  /* margin:0;
     position:absolute;
    font-family:'Oswald', 'sans-serif';
-   background-color: #eee7de;
+   background-color: #eee7de;*/
    width: 100%;
    height: 100%;
 }
 
-.section{
+/*.section{
     margin-top: 0px;
     width: 100%;
     height: 100%;
     padding: 0;
-    /*background: LightSteelBlue;*/
-    /*background-image: url("../img/fundo.png");*/
+    /*background: LightSteelBlue;
+    /*background-image: url("../img/fundo.png");
     background-image: url("../image/fundo menu.png");
-    display: flex;
+    display: inline-flexbox;
     position: absolute;
     flex-direction: row;
     justify-content: center;
@@ -28,7 +33,7 @@ body{
 
 .section img {
     height:100%;
-}
+}*/
 
 .containers{
 
@@ -39,20 +44,21 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
 
 
 }
 
 
-.containers img{
+/*.containers img{
 
     height:100%;
     width: 100%;
-}
+}*/
 
 .cabecalho{
     display: inline-block;
-    background-color: #553235;
+    background-color: #A3DFC3;
     /*background-image: url("assets/img/marrom.webp");*/
     /*border-bottom: solid 5px #553235;*/
     height: 50px;
@@ -97,7 +103,8 @@ body{
 .menu a{
     text-decoration-line: none;
     text-decoration: none;
-    color: #a3dfc3;
+    color: #553235;
+    font-family: Script-Mt-Bold;
     padding: 10px 20px 10px 20px;
 }
 
@@ -109,17 +116,19 @@ body{
 
 .footer{
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 70px;
     margin-top: -11px;
-    top: 91%;
-    background-color: #553235;
-    color:#a3dfc3;
+    /*top: 100%;*/
+    background-color: #A3DFC3;
+    color:#553235;
     font-size: 13px;
+    font-family: Script-Mt-Bold;
 }
 #footer{
     display: inline-block;
+    width: 100%;
 }
 
 .item.social > a {
@@ -176,10 +185,13 @@ body{
   }
 
   #social{
+    display: flex;
     width: 100px;
     height: 40px;
     margin-top: 15px;
-    margin-left: 900px;
+    /*margin-left: 900px;*/
+
+
   }
 
 
@@ -312,9 +324,12 @@ body{
     height: 100%;
     width: 100%;
     margin:0;
-    position: absolute;
-    overflow: hidden;
+
     background-image: url("../image/fundo menu.png");
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
 }
 /*Style do formulário*/
 .form{
@@ -330,11 +345,11 @@ body{
     margin-top: -100px;
 }
 
-.content{
+/*.content{
     height: 100%;
     width: 100%;
     position: absolute;
-}
+}*/
 
 .cmenumobile{
     position: relative;
@@ -343,7 +358,8 @@ body{
 }
 
 .button{
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
     height: 100;
     border-radius: 10px;
 }
@@ -356,15 +372,21 @@ body{
 }
 
 .nome{
+    margin-left: 10px;
     margin-top: 10px;
+    width: 500px;
 }
 
 .email{
+    margin-left: 10px;
     margin-top: 10px;
+    width: 500px;
 }
 
 .text{
+    margin-left: 10px;
     margin-top: 10px;
+    width: 500px;
 }
 /*end form*/
 .carrossel{
