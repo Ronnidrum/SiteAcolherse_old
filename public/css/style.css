@@ -12,8 +12,8 @@ html, body{
     position:absolute;
    font-family:'Oswald', 'sans-serif';
    background-color: #eee7de;*/
-   width: 100%;
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
 }
 
 /*.section{
@@ -35,17 +35,29 @@ html, body{
     height:100%;
 }*/
 
-.containers{
 
-    background-image: url("../image/LOGO_SEM_FUNDO_WEEB_2.png");
+.container{
+
+    background-image: url("../image/logo fundo transparente.png");
     background-repeat: no-repeat;
+    background-position: center;
     margin:0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     position: relative;
 
+
+}
+
+.containers{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: inline;
+    justify-content: center;
+    position: relative;
 
 }
 
@@ -68,15 +80,6 @@ html, body{
     margin:0;
 
 }
-
-.logo{
-
-    display: inline-block;
-    height: 70px;
-    padding: 0px;
-}
-
-.logo img{height:100%;}
 
 .menu {
     display: inline-block;
@@ -345,11 +348,11 @@ html, body{
     margin-top: -100px;
 }
 
-/*.content{
+.content{
     height: 100%;
     width: 100%;
-    position: absolute;
-}*/
+    position: relative;
+}
 
 .cmenumobile{
     position: relative;
@@ -399,22 +402,24 @@ html, body{
 }
 
 .contexto{
-    background-image: url("../image/fundo menu.png");
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: center;
+    align-items: center top;
     text-align: justify;
+
 }
 
-.sobre{
-    height: 100%;
+/*.sobre{
+    height: 100vh;
     width: 100%;
-}
+}*/
 .texto{
     width: 900px;
     border-bottom-right-radius:5px ;
     border-radius: 5px;
+    font-family: Papyrus;
+
 }
 
 .imagem{

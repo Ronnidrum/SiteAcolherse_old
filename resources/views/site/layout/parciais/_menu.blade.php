@@ -6,7 +6,7 @@
              <li><a href={{route('neuropsicologia')}}>Neuropsicologia</a></li>
              <li><a href={{route('conteudo')}}>Conteúdo</a></li>
              <li><a href={{route('contato')}}>Contato</a></li>
-             <li><a href={{route('sobre')}}>Sobre</a></li>
+
          </ul>
      </nav>
       <span id = "btn" class="btn-menu">

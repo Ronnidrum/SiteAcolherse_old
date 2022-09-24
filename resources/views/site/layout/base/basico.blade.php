@@ -21,28 +21,33 @@
 
 </head>
 <body>
-    @include('site.layout.parciais._menu')
-    @yield('conteudo')
-    @include('site.layout.parciais._footer')
-    <script type="text/javascript">
-        $('#btn').on('click ', function () {
-            $('html').toggleClass('btn-menu-active');
-           $('.cmenumobile').toggleClass('active');
+    <div class = "content">
+        @include('site.layout.parciais._menu')
+        <div>
+            @yield('conteudo')
+        </div>
+        @include('site.layout.parciais._footer')
+
+    </div>
+        <script type="text/javascript">
+            $('#btn').on('click ', function () {
+                $('html').toggleClass('btn-menu-active');
+            $('.cmenumobile').toggleClass('active');
 
 
-        });
+            });
 
 
-        $('.btn-menu').mousedown(()=>{
-                $("#btn").css("background-color", "yellow");
-                    setTimeout(()=>{
-                    $("#btn").css("background-color", "#e2b896");
-                },200);
+            $('.btn-menu').mousedown(()=>{
+                    $("#btn").css("background-color", "yellow");
+                        setTimeout(()=>{
+                        $("#btn").css("background-color", "#e2b896");
+                    },200);
 
-        });
+            });
 
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

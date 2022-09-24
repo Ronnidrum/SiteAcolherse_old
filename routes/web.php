@@ -23,7 +23,7 @@ Route::get('/home', [App\Http\Controllers\PrincipalController::class, 'index'])-
 Route::get('/', [App\Http\Controllers\PrincipalController::class, 'index'])->name('home');
 route::get('/conteudo',[App\Http\Controllers\ConteudoController::class, 'index'])->name('conteudo');
 route::get('/contato',[App\Http\Controllers\ContatoController::class, 'index'])->name('contato');
-route::get('/sobre',[App\Http\Controllers\SobreController::class, 'index'])->name('sobre');
+//route::get('/sobre',[App\Http\Controllers\SobreController::class, 'index'])->name('sobre');
 route::get('/psicoterapia',[App\Http\Controllers\PsicoterapiaController::class, 'index'])->name('psicoterapia');
 route::get('/neuropsicologia',[App\Http\Controllers\NeuropsicologiaController::class, 'index'])->name('neuropsicologia');
 
