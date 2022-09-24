@@ -4,7 +4,7 @@
 @section('conteudo')
 
 
-    <div id ="form_contato" class="content">
+    <div id ="form_contato" class="containers">
 
             @include('site.layout.parciais._menuMobile')
 
