@@ -6,23 +6,20 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use stdClass;
+use Illuminate\Http\Request;
 
-class acolherse extends Mailable
+class acolherseMail extends Mailable
 {
     use Queueable, SerializesModels;
-
-    private $user;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(\stdClass $user)
+    public function __construct()
     {
         //
-        $this->user = $user;
     }
 
     /**
@@ -30,8 +27,10 @@ class acolherse extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(Request $request)
     {
-        return $this->view('view.name');
+        return $this->markdown('Mail.Mailacolherse',['nome' => $request->nome,
+                                                    'email' => $request->email,
+                                                    'message' =>$request->mensagem]);
     }
 }

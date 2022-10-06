@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\acolherseMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 
 class ContatoController extends Controller
 {
@@ -13,6 +16,8 @@ class ContatoController extends Controller
 
     public function envioEmail(Request $request){
 
+        //var_dump($request);
+       // die();
         $request->validate(
             [
                 'nome' => 'required|min:3|max:40',
@@ -32,6 +37,8 @@ class ContatoController extends Controller
 
         );
 
-        dd($request);
+        Mail::to('psicologiaacolherse@gmail.com')->send(new acolherseMail());
+        return back()->with('success', 'email enviado com sucesso.');
+
     }
 }

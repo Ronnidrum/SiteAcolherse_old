@@ -1,6 +1,8 @@
 <?php
 
 use App\Mail\acolherse;
+use App\Mail\acolherseMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,12 +30,10 @@ route::get('/psicoterapia',[App\Http\Controllers\PsicoterapiaController::class, 
 route::get('/neuropsicologia',[App\Http\Controllers\NeuropsicologiaController::class, 'index'])->name('neuropsicologia');
 
 //method post
-route::post('/contato',[App\Http\Controllers\ContatoController::class, 'envioEmail'])->name('contato');
+route::post('/envioEmail',[App\Http\Controllers\ContatoController::class, 'envioEmail'])->name('email');
 
 //rota para o envio de e-mail
-route::get('envio-email', function(){
-    $user = new stdClass();
-    $user->name='Ronniery';
-    $user->email='ronnidrum@gmail.com';
-   // return new app\site\layout\acolherse();
-});
+/*route::get('/envioEmail', function(){
+    //return new acolherseMail();
+    Mail::to('psicologiaacolherse@gmail.com')->send(new acolherseMail());
+})->name('email');*/

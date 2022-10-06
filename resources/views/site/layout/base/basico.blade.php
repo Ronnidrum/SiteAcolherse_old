@@ -26,7 +26,9 @@
         <div>
             @yield('conteudo')
         </div>
+        <div>
         @include('site.layout.parciais._footer')
+    </div>
 
     </div>
         <script type="text/javascript">
@@ -38,13 +40,13 @@
             });
 
 
-            $('.btn-menu').mousedown(()=>{
+            /*$('.btn-menu').mousedown(()=>{
                     $("#btn").css("background-color", "yellow");
                         setTimeout(()=>{
                         $("#btn").css("background-color", "#e2b896");
                     },200);
 
-            });
+            });*/
 
         </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>

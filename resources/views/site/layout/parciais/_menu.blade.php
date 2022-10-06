@@ -1,5 +1,5 @@
-<header class="cabecalho">
-     <nav class="menu">
+<nav  class="cabecalho">
+     <div class="menu">
          <ul>
              <li><a href={{route('home')}}>Home</a></li>
              <li><a href={{route('psicoterapia')}}>Psicoterapia</a></li>
@@ -8,11 +8,11 @@
              <li><a href={{route('contato')}}>Contato</a></li>
 
          </ul>
-     </nav>
+        </div>
       <span id = "btn" class="btn-menu">
              <span></span>
              <span></span>
              <span></span>
      </span>
 
- </header>
+    </nav>
