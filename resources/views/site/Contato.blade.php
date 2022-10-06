@@ -8,7 +8,7 @@
 
 
 
-        <div class="col-md-4 jumbotron mx-auto form1" >
+        <div class="col-md-4  mx-auto form1" >
             <div class = "contact" >
                 @include('site.layout.parciais._menuMobile')
 
